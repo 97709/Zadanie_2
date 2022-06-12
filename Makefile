@@ -1,11 +1,11 @@
 #Plik Makefile1
 .PHONY: clean
-.SUFFIXES: .c .o .a
+.SUFFIXES: .c .o .a .so
 
-.c.o:
+%.o: %.c
 	gcc -c $<
-.o:
-	gcc -o $@ $^
+lib%.a: %.o
+	ar rs $@ $<
 
 Code2: main.o libkwadrat.a libszescian.so
 	gcc -o $@ $^
@@ -15,10 +15,9 @@ kwadrat.o: kwadrat.c
 szescian.o: szescian.c
 	gcc -fPIC -c  $<
 
-libkwadrat.a : kwadrat.o
-	ar rs $@ $<
+libkwadrat.a : kwadrat.o	
+
 libszescian.so: szescian.o
 	gcc -shared -o $@ $<
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib
-clean:
-	rm -f kwadrat *.o *.a
+

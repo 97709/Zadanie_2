@@ -10,4 +10,9 @@
 >Zmodyfikowanie pliku Makefile, dodanie zmiennych automatycznych.
 
 #4. Zastosowanie reguły przyrostków 
->Zmodyfikowanie pliku Makefile, dodanie reguły przyrostków.
+>Plik Makefile został zmodyfikowany, zostały zastosowane w nim reguły przyrostków
+
+#5. Zastosowanie reguły wzorca
+>Plik Makefile został zmodyfikowany, zostały zastosowane w nim reguły wzorca
+
+#Podpunkty od 1 do 5 opowiadają konkretnym commitom, 1 podpunkt zawiera tylko pliki źródłowe. Pozostałe podpunkty są w stanie utworzyć działający program, wystarczy tylko umieścić wszystkie pliki źródłowe, nagłówkowe oraz plik "Makefile" w jednym folderze, a następnie użyć komendy:"make Code2". Następnie możemy uruchomić program za pomocą polecenia:"./Code2".
