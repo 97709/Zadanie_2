@@ -5,3 +5,9 @@
 
 #2. Utworzenie najprostrzego pliku Makefile
 >Dodanie do repozytorium pliku Makefile, który tworzy pliki kwadrat.o, szescian.o, kwadrat.a, szescian.so oraz końcowy program Code2.
+
+#3. Zastosowanie zmiennych automatycznych
+>Zmodyfikowanie pliku Makefile, dodanie zmiennych automatycznych.
+
+#4. Zastosowanie reguły przyrostków 
+>Zmodyfikowanie pliku Makefile, dodanie reguły przyrostków.
